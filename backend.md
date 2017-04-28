@@ -1,4 +1,4 @@
-# Software Enginner Challenge (Backend)
+# Software Engineer Challenge (Backend)
 
 Build an API to calculate shortest driving path to visit all specified locations, starting from the first in the list.
 
