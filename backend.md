@@ -1,18 +1,22 @@
 # Software Engineer Challenge (Backend)
 
+Build an API to calculate shortest driving path and estimated driving time to visit all specified locations, starting from the first in the list.  
+Note that we expect shortest **driving** distance (and estimated travel time), so you may want to use [Google Maps API](https://developers.google.com/maps/)  
 
+**Prefered languages** (you are **not** required to pick from them):
+ - Node.js
+ - PHP
+ - Python
 
-# Task
+**Solution requirements:**
+ - Must be stored in git repository (you can send it as zip file, github or bitbucket link, dropbox public folder, etc.).
+ - Must run in Docker container(s). `DOCKERFILE` and `docker-compose.yml` must be provided.
+ - Must be horizontally scalable.
+ - There is no specific requirements regarding documentation, architecture, etc. but **we expect your solution to be production ready**
 
-Build an API to calculate shortest driving path and estimated driving time to visit all specified locations, starting from the first in the list.
-Note that we expect shortest **driving** distance (and expected travel time), you may want to use (Google Maps API)[https://developers.google.com/maps/]
+**Task:**
 
-General requirements:
- - `README.md` must be provided
- - Solution should run in Docker container(s). `DOCKERFILE` and `docker-compose.yml` must be provided
- - Server must be horisonataly scalable
-
-Implement following endpoints:
+Implement the following HTTP endpoints:
 
 - [POST `/route`: Submit start point and drop-off locations](#submit-start-point-and-drop-off-locations)
 - [GET `/route/<TOKEN>`: Get shortest driving route](#get-shortest-driving-route)
@@ -116,3 +120,5 @@ Response example:
     	"total_time": 1800
     }
 ```
+
+**Questions? We love to answer: <fedor.korshunov@lalamove.com>**
