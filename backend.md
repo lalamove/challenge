@@ -9,7 +9,7 @@ Note that we expect shortest **driving** distance (and estimated travel time), s
  - Python
 
 **Solution requirements:**
- - Must be stored in git repository (you can send it as zip file, github or bitbucket link, dropbox public folder, etc.).
+ - Source code must be stored in git repository (you can send it as zip file, github or bitbucket link, dropbox public folder, etc.).
  - Must run in Docker container(s). `DOCKERFILE` and `docker-compose.yml` must be provided.
  - Must be horizontally scalable.
  - There is no specific requirements regarding documentation, architecture, etc. but **we expect your solution to be production ready**
