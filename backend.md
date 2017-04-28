@@ -30,7 +30,7 @@ Implement following endpoints:
 		<th>Response body</th>
 		<td>
 			HTTP code 200<br/>
-			<code lang="json">{ "token": "TOKEN" }</code>
+			<pre lang="js">{ "token": "TOKEN" }</pre>
 		</td>
 	</tr>
 </table>
