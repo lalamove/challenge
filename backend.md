@@ -4,7 +4,10 @@ Build an API to calculate shortest driving path to visit all specified locations
 
 Implement following endpoints:
 
-### Submit start point and drop-off locations
+	- [POST `/route`: Submit start point and drop-off locations](#submit-start-point-and-drop-off-locations)
+	- [GET `/route/<TOKEN>`: Get shortest driving route](#get-shortest-driving-route)
+
+#### Submit start point and drop-off locations
 
 <table>
 	<tr>
@@ -48,7 +51,7 @@ Response example:
 { "token": "9d3503e0-7236-4e47-a62f-8b01b5646c16" }
 ```
 
-### Get shortest driving route
+#### Get shortest driving route
 Get shortest driving route for submitted locations (sequence of `[lat, lon]` values starting from start location resulting in shortest path)
 
 <table>
