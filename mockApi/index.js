@@ -50,6 +50,7 @@ router.get('/route/:token', function* () {
 	}
 
 	this.body = {
+		status: 'success',
 		path: [
 			["22.372081", "114.107877"],
 			["22.326442", "114.167811"],

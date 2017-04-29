@@ -9,9 +9,10 @@ Note that we expect shortest **driving** distance (and estimated travel time), s
  - Python
 
 **Solution requirements:**
- - Source code must be stored in git repository (you can send it as zip file, github or bitbucket link, dropbox public folder, etc.).
- - Must run in Docker container(s). `DOCKERFILE` and `docker-compose.yml` must be provided.
- - Must be horizontally scalable.
+ - Source code must be stored in git repository (you can send it as zip file, github or bitbucket link, dropbox public folder, etc.)
+ - Must run in Docker container(s). `DOCKERFILE` and `docker-compose.yml` must be provided
+ - Must be asynchronous
+ - Must be horizontally scalable
  - There is no specific requirements regarding documentation, architecture, etc. but **we expect your solution to be production ready**
 
 **Task:**
@@ -78,6 +79,7 @@ Response body:
 
 ```json
 {
+	"status": "success",
 	"path": [
 		["ROUTE_START_LATITUDE", "ROUTE_START_LONGITUDE"],
 		["DROPOFF_LATITUDE_#1", "DROPOFF_LONGITUDE_#1"],
@@ -111,6 +113,7 @@ URL example:
 Response example:  
 ```json
 {
+	"status": "success",
 	"path": [
 		["22.372081", "114.107877"],
 		["22.326442", "114.167811"],
