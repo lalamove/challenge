@@ -9,7 +9,7 @@ Note that we expect shortest **driving** distance (and estimated travel time), s
  - Python
 
 **Solution requirements:**
- - Source code must be stored in git repository (you can send it as zip file, github or bitbucket link, dropbox public folder, etc.)
+ - Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
  - Must run in Docker container(s). `DOCKERFILE` and `docker-compose.yml` must be provided
  - Must be asynchronous
  - Must be horizontally scalable
@@ -124,4 +124,4 @@ Response example:
 }
 ```
 
-**Questions? We love to answer: <fedor.korshunov@lalamove.com>**
+**Questions? We love to answer: <techchallenge@lalamove.com>**
