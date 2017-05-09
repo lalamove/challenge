@@ -1,6 +1,6 @@
 # Lalamove Tech challenges
 
-Choose the challenge most appropriate for you:
+Choose the challenge most appropriate for you (one is enough):
 
 - [Backend](backend.md)
 - [Frontend](frontend.md)
