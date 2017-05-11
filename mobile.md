@@ -5,7 +5,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
 
 ### API Specification
 
-**Get list of deliveries** (Run provided [mock API for Mobile](mockApiMobile))
+**Get list of deliveries** (use [mock API for Mobile](mockApiMobile))
   * Method
     `GET`
   * Endpoint
@@ -49,17 +49,17 @@ As an user I want to be able to see a list of my deliveries, including receivers
 Production ready code that you are proud of.
 
 ## Technical Requirement
-1. Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. NOTE: email servers will reject .zip files with source code)
+1. Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
 2. App should be able to work offline after initial use.
 3. Candidates are free to use any libraries.
 
 * ### iOS Engineer
-    - Storyboard or XIB is not allowed (Create UI with code only).
-    - Use the latest version of Swift.
+    - Storyboard or XIB is not allowed (Create UI with code only)
+    - Use the latest version of Swift
 
 * ### Android Engineer
-    - Project must compile in Android Studio and Gradle.
-    - Support multi pane layout in tablet landscape orientation.
+    - Project must compile in Android Studio and Gradle
+    - Support multi pane layout in tablet landscape orientation
 
 ## Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
