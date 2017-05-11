@@ -1,6 +1,6 @@
 # Mock API
 
-Mock API for backend/frontend challenge. Requires Node.js ver. 4+
+Mock API for mobile challenge. Requires Node.js ver. 4+
 
 Install dependencies:
 
