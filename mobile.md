@@ -43,7 +43,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
   - Add marker on the map based on the provided lat/lng. 
 
 ### What we expect from you?
-Production ready code that you are proud of.
+Production ready solution that you are proud of.
 
 ## Technical Requirement
 1. Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
