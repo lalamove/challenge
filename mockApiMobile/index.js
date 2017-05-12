@@ -23,7 +23,6 @@ router.get('/deliveries', function* () {
 
 	this.body = [
 		{
-			id: 1,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -32,7 +31,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 2,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -41,7 +39,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 3,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -50,7 +47,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 4,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -59,7 +55,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 5,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -68,7 +63,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 6,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -77,7 +71,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 7,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -86,7 +79,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 8,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -95,7 +87,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 9,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -104,7 +95,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 10,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -113,7 +103,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 11,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -122,7 +111,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 12,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -131,7 +119,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 13,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -140,7 +127,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 14,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -149,7 +135,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 15,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -158,7 +143,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 16,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -167,7 +151,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 17,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -176,7 +159,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 18,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
@@ -185,7 +167,6 @@ router.get('/deliveries', function* () {
 				address: 'Mong Kok'
 			}
 		}, {
-			id: 19,
 			description: 'Deliver documents to Andrio',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
 			location: {
@@ -194,7 +175,6 @@ router.get('/deliveries', function* () {
 				address: 'Cheung Sha Wan'
 			}
 		}, {
-			id: 20,
 			description: 'Deliver parcel to Leviero',
 			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
 			location: {
