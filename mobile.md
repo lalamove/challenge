@@ -31,6 +31,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
                 "lat": 22.319181,
                 "lng": 114.170008,
                 "address": "Mong Kok"
+            }
         },
         ...
     ]
