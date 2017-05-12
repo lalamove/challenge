@@ -12,13 +12,11 @@ As an user I want to be able to see a list of my deliveries, including receivers
     `/deliveries`
   * Parameters
     * `offset` : Starting index
-    * `require` : Number of items to required
   * Response example:
     `HTTP code 200`
     ```json
     [
         {
-            "id": 1,
             "description": "Deliver documents to Andrio",
             "imageUrl": "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg",
             "location": {
@@ -27,7 +25,6 @@ As an user I want to be able to see a list of my deliveries, including receivers
                 "address": "Cheung Sha Wan"
             }
         }, {
-            "id": 2,
             "description": "Deliver parcel to Leviero",
             "imageUrl": "http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg",
             "location": {
