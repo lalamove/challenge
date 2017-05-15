@@ -1,5 +1,6 @@
 'use strict'
 const app = require('koa')()
+const cors = require('koa-cors')
 const logger = require('koa-logger')
 const router = require('koa-router')()
 
@@ -63,6 +64,7 @@ router.get('/route/:token', function* () {
  
 app
 	.use(logger())
+	.use(cors())
 	.use(router.routes())
 	.use(router.allowedMethods())
 
