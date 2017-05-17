@@ -6,7 +6,6 @@ Note that we expect shortest **driving** distance (and estimated travel time), s
 **Prefered languages** (you are **not** required to pick from them):
  - Node.js
  - PHP
- - Python
 
 **Solution requirements:**
  - Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
