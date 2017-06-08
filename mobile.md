@@ -47,8 +47,8 @@ As an user I want to be able to see a list of my deliveries, including receivers
 Production ready solution that you are proud of.
 
 ## Technical Requirement
-1. Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
-2. App should be able to work offline after initial use.
+1. Source code must be stored in a git repository (you can send us github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
+2. App should cache deliveries (Cached deliveries should be available offline).
 3. Candidates are free to use any libraries.
 
 * ### iOS Engineer
@@ -57,7 +57,7 @@ Production ready solution that you are proud of.
 
 * ### Android Engineer
     - Project must compile in Android Studio and Gradle
-    - Support multi pane layout in tablet landscape orientation
+    - Support multi pane layout in tablet *landscape* (For simplicity use XML based fragments)
 
 ## Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
