@@ -47,9 +47,10 @@ As an user I want to be able to see a list of my deliveries, including receivers
 Production ready solution that you are proud of.
 
 ## Technical Requirement
-1. Source code must be stored in a git repository (you can send us github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
-2. App should cache deliveries (Cached deliveries should be available offline).
-3. Candidates are free to use any libraries.
+- Source code must be stored in a git repository (you can send us github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
+- For public repos avoid words `lalamove` and `challenge` to prevent other candidates from finding your solution
+- App should cache deliveries (Cached deliveries should be available offline)
+- Candidates are free to use any libraries
 
 * ### iOS Engineer
     - Storyboard or XIB is not allowed (Create UI with code only)
