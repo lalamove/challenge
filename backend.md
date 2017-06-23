@@ -9,7 +9,7 @@ Note that we expect shortest **driving** distance (and estimated travel time), s
 
 **Solution requirements:**
  - Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
- - Must run in Docker container(s). `DOCKERFILE` and/or `docker-compose.yml` must be provided
+ - Blackbox. Must build/run in Docker container(s). `DOCKERFILE` and/or `docker-compose.yml` must be provided
  - Must be asynchronous
  - Must be horizontally scalable
  - There is no specific requirements regarding documentation, architecture, etc. but **we expect your solution to be production ready**
