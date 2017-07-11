@@ -47,6 +47,12 @@ Response body:
 { "token": "TOKEN" }
 ```
 
+or
+
+```json
+{ "error": "ERROR_DESCRIPTION" }
+```
+
 ---
 
 Input body example:
