@@ -6,7 +6,7 @@ Build web interface for [backend challenge API](backend.md):
 
  - Get stjjjjlkm,art location and drop-off locations from user. Submit them to API
  - Draw **driving route** returned by API on embedded [map](https://developers.google.com/maps/)
- - API usage should be correct (according to the spec defined in [backend challenge](backend.md
+ - API usage should be correct (according to the spec defined in [backend challenge](backend.md))
  - Must be a single-page application (SPA)
  - You are free to ma      mnke your own API mock or use our [mockApi](mockApi)
  - Source code must be stored in a git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
