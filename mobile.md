@@ -38,27 +38,30 @@ As an user I want to be able to see a list of my deliveries, including receivers
     ```
 
 ### User Requirements
-  - Retrieve list of deliveries from the API
-  - Display list of deliveries.
-  - Show details when user select an item in the list.
-  - Add marker on the map based on the provided lat/lng. 
+- Retrieve list of deliveries from the API
+- Display list of deliveries.
+- Show details when user select an item in the list.
+- Add marker on the map based on the provided lat/lng. 
 
 ### What we expect from you?
 Production ready solution that you are proud of.
 
 ## Technical Requirement
 - Source code must be stored in a git repository (you can send us github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
-- For public repos avoid words `lalamove` and `challenge` to prevent other candidates from finding your solution
+- For public repos:
+	- Avoid words `lalamove` and `challenge`
+	- Do not copy-paste any part of this file (task, API documentation, etc.)
+	- This is needed to prevent other candidates from finding your solution
 - App should cache deliveries (Cached deliveries should be available offline)
 - Candidates are free to use any libraries
 
 * ### iOS Engineer
-    - Storyboard or XIB is not allowed (Create UI with code only)
-    - Use the latest version of Swift
+	- Storyboard or XIB is not allowed (Create UI with code only)
+	- Use the latest version of Swift
 
 * ### Android Engineer
-    - Project must compile in Android Studio and Gradle
-    - Support multi pane layout in tablet *landscape* (For simplicity use XML based fragments)
+	- Project must compile in Android Studio and Gradle
+	- Support multi pane layout in tablet *landscape* (For simplicity use XML based fragments)
 
 ## Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
