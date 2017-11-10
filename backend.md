@@ -15,7 +15,7 @@ Note that we expect **shortest driving** distance (and estimated travel time), s
 	- This is needed to prevent other candidates from finding your solution
  - Blackbox. Must build/run in Docker container(s). `docker-compose.yml` must be provided
  - Must be asynchronous (a user must not wait for a driving route calculation during calls, see API below for details)
- 	- if PHP is used this requirement can be ommited, but interface should be preserved.
+ 	- if PHP is used this requirement can be omitted, but the interface should be preserved.
  - Must be horizontally scalable
  - There is no specific requirements regarding documentation, architecture, etc. but **we expect your solution to be production ready**
 
