@@ -4,8 +4,9 @@ Build an API to calculate shortest driving path and estimated driving time to vi
 Note that we expect **shortest driving** distance (and estimated travel time), so you may want to use [Google Maps API](https://developers.google.com/maps/)  
 
 **Prefered languages** (you are **not** required to pick from them):
- - Node.js
  - PHP
+ - Node.js
+ - Golang
 
 **Solution requirements:**
  - Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
