@@ -3,7 +3,7 @@
 Build an API to calculate shortest driving path and estimated driving time to visit all specified locations, starting from the first in the list.  
 Note that we expect **shortest driving** distance (and estimated travel time), so you may want to use [Google Maps API](https://developers.google.com/maps/)  
 
-**Prefered languages** (you are **not** required to pick from them):
+**Preferred languages** (you are **not** required to pick from them):
  - PHP
  - Node.js
  - Golang
