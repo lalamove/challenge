@@ -25,7 +25,7 @@ router.get('/deliveries', function* () {
 	this.body = [
 		{
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -33,7 +33,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -41,7 +41,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -49,7 +49,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -57,7 +57,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -65,7 +65,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -73,7 +73,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -81,7 +81,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -89,7 +89,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -97,7 +97,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -105,7 +105,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -113,7 +113,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -121,7 +121,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -129,7 +129,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -137,7 +137,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -145,7 +145,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -153,7 +153,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -161,7 +161,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
@@ -169,7 +169,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver documents to Andrio',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
+			imageUrl: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
 			location: {
 				lat: 22.336093,
 				lng: 114.155288,
@@ -177,7 +177,7 @@ router.get('/deliveries', function* () {
 			}
 		}, {
 			description: 'Deliver parcel to Leviero',
-			imageUrl: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
+			imageUrl: 'http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg',
 			location: {
 				lat: 22.319181,
 				lng: 114.170008,
