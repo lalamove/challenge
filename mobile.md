@@ -47,7 +47,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
 Production ready solution that you are proud of.
 
 ## Technical Requirement
-- Source code must be stored in a git repository (you can send us github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
+- Source code must be stored in a git repository (you can send us github or bitbucket link)
 - For public repos:
 	- Avoid words `lalamove` and `challenge`
 	- Do not copy-paste any part of this file (task, API documentation, etc.)
@@ -57,11 +57,10 @@ Production ready solution that you are proud of.
 
 * ### iOS Engineer
 	- Storyboard or XIB is not allowed (Create UI with code only)
-	- Use the latest version of Swift
+	- Must write in the latest Swift version
 
 * ### Android Engineer
-	- Project must compile in Android Studio and Gradle
-	- Support multi pane layout in tablet *landscape* (For simplicity use XML based fragments)
+	- Project must compile `./gradlew build`
 
 ## Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
