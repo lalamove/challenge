@@ -1,6 +1,6 @@
 {
   "name": "mock-api-mobile",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mock API for Lalamove mobile challenge",
   "main": "index.js",
   "scripts": {
