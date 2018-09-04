@@ -13,9 +13,9 @@ function getRandomInt(min, max) {
 
 function getRandomDeliveryLocation() {
     let locs = [
-        { location: { lat: 22.319181, lng: 114.170008 }, address: 'Mong Kok' },
-        { location: { lat: 22.336093, lng: 114.155288 }, address: 'Cheung Sha Wan' },
-        { location: { lat: 22.335538, lng: 114.176169 }, address: 'Kowloon Tong' }
+        { lat: 22.319181, lng: 114.170008, address: 'Mong Kok' },
+        { lat: 22.336093, lng: 114.155288, address: 'Cheung Sha Wan' },
+        { lat: 22.335538, lng: 114.176169, address: 'Kowloon Tong' }
     ]
 
     return locs[ getRandomInt( 0, locs.length ) ]
