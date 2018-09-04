@@ -67,7 +67,7 @@ router.get('/deliveries', function* () {
 	}
 
     this.body = []
-    for ( let i = offset; i < limit && i < cap; i++ ) {
+    for ( let i = offset; i < offset + limit && i < cap; i++ ) {
         this.body.push( getRandomDeliveryItem( i ) )
     }
 
