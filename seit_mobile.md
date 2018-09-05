@@ -7,19 +7,19 @@
 6. Build CI for automated scripts
 
 # Product requirement
-Image-1A
+Image-1A  
 ![Image-1A](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01a.jpg)
 
-Image-1B
+Image-1B  
 ![Image-1B](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01b.jpg)
 
-Image-1C
+Image-1C  
 ![Image-1C](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01c.jpg)
 
-Image-2A
+Image-2A  
 ![Image-2A](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-02a.jpg)
 
-Image-2B
+Image-2B  
 ![Image-2B](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-02b.jpg)
 
 #### Functionality
