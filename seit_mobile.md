@@ -3,7 +3,7 @@
 2. Plan what should be automated
 3. Write automated tests (using UI Automator 2.0 tests on Android and XCUITest tests in Swift on iOS)
 4. Unit tests are out of scope
-5. Run automation tests on Generate test report
+5. Run automation tests on emulator and generate test report
 
 # Product requirement
 Image-1A  
