@@ -30,7 +30,7 @@ Image-2B
 - [Image-1C] This error shows when trying to retrieve more items from the server.
 - [Image-2A] Click any item from Delivery List and Delivery Details page shows.
 - [Image-2A] Information should be shown correctly based on the item details from [Image-1A] (refer to attached mockup).
-- [Image-2A] Map pin shows.
+- [Image-2A] Map pin shows and centred to that pin for that delivery.
 - [Image-2B] Shows when clicking the 14th record from Delivery List.
 
 **We are happy to answer any questions: <techchallenge@lalamove.com>**
