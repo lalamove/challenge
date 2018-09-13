@@ -1,138 +1,116 @@
 # Software Engineer Challenge (Backend)
 
-Build an API to calculate shortest driving path and estimated driving time to visit all specified locations, starting from the first in the list.  
-Note that we expect **shortest driving** distance (and estimated travel time), so you may want to use [Google Maps API](https://developers.google.com/maps/)  
+## Introduction
 
-**Preferred languages** (you are **not** required to pick from them):
- - PHP
- - Node.js
- - Golang
+In Lalamove, we are receiving order of delivery day and night. As a software engineer in Lalamove, you have to provide a reliable backend system to clients. Your task here is to implement three endpoints to list/place/take orders.
 
-**Solution requirements:**
- - Source code must be stored in git repository (you can send it as github or bitbucket link, dropbox/google drive public folder, etc. **NOTE: email servers will reject .zip files with source code**)
- - For public repos:
- 	- Avoid words `lalamove` and `challenge`
-	- Do not copy-paste any part of this file (task, API documentation, etc.)
-	- This is needed to prevent other candidates from finding your solution
- - Blackbox. Must build/run in Docker container(s). `docker-compose.yml` must be provided
- - Must be asynchronous (a user must not wait for a driving route calculation during calls, see API below for details)
- 	- if PHP is used this requirement can be omitted, but the interface should be preserved.
- - Must be horizontally scalable
- - There is no specific requirements regarding documentation, architecture, etc. but **we expect your solution to be production ready**
+## Requirement
 
-**Task:**
+1. We value a **clean**, **simple** working solution.
+2. Candidate must provide a `start.sh` bash script at the root of the project, which should setup all relevant applications. It must work on Ubuntu(We suggest to use Docker). We will run our automated tests again your solution 10 second after start.sh exit with 0.
+3. We prefer Golang, but the solution can also be written in one of the following language/platform: PHP, Nodejs, Python, Java and .Net.
+4. Candidate must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing words `lalamove` and `challenge`.
+5. Having unit/integration tests is a strong bonus.
+6. As we run automated tests on your project, you must comply to the requirement.
+7. The solution must be production ready.
 
-Implement the following HTTP endpoints:
+## Problem Statement
 
-- [POST `/route`: Submit start point and drop-off locations](#submit-start-point-and-drop-off-locations)
-- [GET `/route/<TOKEN>`: Get shortest driving route](#get-shortest-driving-route)
+1. Must be a RESTful HTTP API listening to port `8080`
+2. The API must implement 3 endpoints with path, method, request and response body as specified
+    - One endpoint to create an order (see sample)
+        - To create an order, the API client must provide an origin and a destination (see sample)
+        - The API responds an object containing the distance and the order ID (see sample)
 
-### Submit start point and drop-off locations
+    - One endpoint to take an order (see sample)
+        - An order must not be takable multiple time.
+        - An error response should be sent if a client tries to take an order already taken.
 
-Method:  
- - `POST`
+    - One endpoint to list orders (see sample)
 
-URL path:  
- - `/route`
+3. You must use google maps API to get the distance for the order: https://cloud.google.com/maps-platform/routes/
+4. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL and MongoDB). The DB installation&initialisation must be done in `start.sh`.
 
-Input body:  
 
-```json
-[
-	["ROUTE_START_LATITUDE", "ROUTE_START_LONGITUDE"],
-	["DROPOFF_LATITUDE_#1", "DROPOFF_LONGITUDE_#1"],
-	...
-]
-```
+## Api interface example
 
-Response body:  
- - `HTTP code 200`  
+#### Place order
 
-```json
-{ "token": "TOKEN" }
-```
+  - Method: `POST`
+  - URL path: `/order`
+  - Request body:
 
-or
+    ```
+    {
+        "origin": ["START_LATITUDE", "START_LONGTITUDE"],
+        "destination": ["END_LATITUDE", "END_LONGTITUDE"]
+    }
+    ```
 
-```json
-{ "error": "ERROR_DESCRIPTION" }
-```
+  - Response:
 
----
+    Header: `HTTP 200`
+    Body:
+      ```
+      {
+          "id": <order_id>,
+          "distance": <total_distance>,
+          "status": "UNASSIGN"
+      }
+      ```
+    or
 
-Input body example:
+    Header: `HTTP 500`
+    Body:
+      ```json
+      {
+          "error": "ERROR_DESCRIPTION"
+      }
+      ```
 
-```json
-[
-	["22.372081", "114.107877"],
-	["22.284419", "114.159510"],
-	["22.326442", "114.167811"]
-]
-```
+#### Take order
 
-Response example:
+  - Method: `PUT`
+  - URL path: `/order/:id`
+  - Request body:
+    ```
+    {
+        "status":"taken"
+    }
+    ```
+  - Response:
+    Header: `HTTP 200`
+    Body:
+      ```
+      {
+          "status": "SUCCESS"
+      }
+      ```
+    or
 
-```json
-{ "token": "9d3503e0-7236-4e47-a62f-8b01b5646c16" }
-```
+    Header: `HTTP 409`
+    Body:
+      ```
+      {
+          "error": "ORDER_ALREADY_BEEN_TAKEN"
+      }
+      ```
 
-### Get shortest driving route
-Get shortest driving route for submitted locations (sequence of `[lat, lon]` values starting from start location resulting in shortest path)
+#### Order list
 
-Method:  
-- `GET`
+  - Method: `GET`
+  - Url path: `/orders?page=:page&limit=:limit`
+  - Response:
 
-URL path:  
-- `/route/<TOKEN>`
+    ```
+    [
+        {
+            "id": <order_id>,
+            "distance": <total_distance>,
+            "status": <ORDER_STATUS>
+        },
+        ...
+    ]
+    ```
 
-Response body:  
-- HTTP 200  
-
-```json
-{
-	"status": "success",
-	"path": [
-		["ROUTE_START_LATITUDE", "ROUTE_START_LONGITUDE"],
-		["DROPOFF_LATITUDE_#1", "DROPOFF_LONGITUDE_#1"],
-		...
-	],
-	"total_distance": DRIVING_DISTANCE_IN_METERS,
-	"total_time": ESTIMATED_DRIVING_TIME_IN_SECONDS
-}
-```  
-or  
-
-```json
-{
-	"status": "in progress"
-}
-```  
-or  
-
-```json
-{
-	"status": "failure",
-	"error": "ERROR_DESCRIPTION"
-}
-```
-
----
-
-URL example:  
- - `/route/9d3503e0-7236-4e47-a62f-8b01b5646c16`
-
-Response example:  
-```json
-{
-	"status": "success",
-	"path": [
-		["22.372081", "114.107877"],
-		["22.326442", "114.167811"],
-		["22.284419", "114.159510"]
-	],
-	"total_distance": 20000,
-	"total_time": 1800
-}
-```
-
-**Questions? We love to answer: <techchallenge@lalamove.com>**
+Questions? We love to answer: techchallenge@lalamove.com
