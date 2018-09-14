@@ -4,6 +4,9 @@
 3. Write automated tests (using UI Automator 2.0 tests on Android and XCUITest tests in Swift on iOS)
 4. Unit tests are out of scope
 5. Run automation tests on emulator and generate test report
+6. Submit the project as a git repository (github.com, bitbucket.com, gitlab.com) 
+7. Repository must avoid containing words lalamove and challenge
+8. Provide instruction for setting up the environment and run the test
 
 # Product requirement
 Image-1A  
