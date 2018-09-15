@@ -5,18 +5,28 @@ As an user I want to be able to see a list of my deliveries, including receivers
 
 ### API Specification
 
-**Get list of deliveries** (use [mock API for Mobile](mockApiMobile))
+**Get list of deliveries**
+  * Protocol
+    `HTTPS`
+  * Hostname
+    `mock-api-mobile.dev.lalamove.com`
   * Method
     `GET`
   * Endpoint
     `/deliveries`
   * Parameters
-    * `offset` : Starting index
+    * `offset`
+      * Description: Starting index.
+      * Data type: Integer.
+    * `limit`
+      * Description: Number of items requested
+      * Data type: Integer.
   * Response example:
     `HTTP code 200`
     ```json
     [
         {
+            "id": 0,
             "description": "Deliver documents to Andrio",
             "imageUrl": "https://www.what-dog.net/Images/faces2/scroll0015.jpg",
             "location": {
@@ -25,6 +35,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
                 "address": "Cheung Sha Wan"
             }
         }, {
+            "id": 1,
             "description": "Deliver parcel to Leviero",
             "imageUrl": "http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg",
             "location": {
@@ -53,6 +64,7 @@ Production ready solution that you are proud of.
 	- Do not copy-paste any part of this file (task, API documentation, etc.)
 	- This is needed to prevent other candidates from finding your solution
 - App should cache deliveries (Cached deliveries should be available offline)
+- Could retrieve up to maximum 20 items per API call
 - Candidates are free to use any libraries
 
 * ### iOS Engineer
