@@ -28,7 +28,10 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 
     - One endpoint to list orders (see sample)
 
-3. You must use google maps API to get the distance for the order: https://cloud.google.com/maps-platform/routes/
+3. You must use one of the following APIs to get the distance for the order:
+- Google Maps API (https://cloud.google.com/maps-platform/routes/)
+- Similar API from Mapbox or HERE Maps
+- **NOTE:** if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
 4. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL and MongoDB). The DB installation&initialisation must be done in `start.sh`.
 
 
