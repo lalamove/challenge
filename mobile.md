@@ -14,7 +14,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
     `GET`
   * Endpoint
     `/deliveries`
-  * Parameters
+  * Query String Parameters
     * `offset`
       * Description: Starting index.
       * Data type: Integer.
