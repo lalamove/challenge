@@ -2,7 +2,10 @@
 
 ### Requirements
 - Get pick-up location and drop-off location from user, submit them to [mockApi](https://github.com/lalamove/challenge/tree/master/mockApi)
-- Display **driving route** returned by API on embedded [Google Map API](https://developers.google.com/maps/)
+- Display **driving route** returned by API on embedded Map from one of data providers:
+  - [Google Map API](https://developers.google.com/maps/)
+  - Similar solutions from Mapbox or HERE Maps
+  - NOTE: if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
 - Should autocomplete address
 - Multi-stops is not required
 
