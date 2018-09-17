@@ -53,6 +53,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
 - Display list of deliveries.
 - Show details when user select an item in the list.
 - Add marker on the map based on the provided lat/lng. 
+  - NOTE: if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
 
 ### What we expect from you?
 Production ready solution that you are proud of.
