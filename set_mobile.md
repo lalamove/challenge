@@ -38,7 +38,9 @@ Image-2B
 
 # Testable apps
   * Android
-  `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-challenge-20180918.apk`
+  `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-android-challenge-20180918.apk`
+  * iOS
+  `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-ios-challenge-20180918.zip`
 
 **We are happy to answer any questions: <techchallenge@lalamove.com>**
 
