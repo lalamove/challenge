@@ -7,7 +7,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 ## Requirement
 
 1. We value a **clean**, **simple** working solution.
-2. Candidate must provide a `start.sh` bash script at the root of the project, which should setup all relevant applications. It must work on Ubuntu(We suggest to use Docker). We will run our automated tests again your solution 10 second after start.sh exit with 0.
+2. Candidate must provide a `start.sh` bash script at the root of the project, which should setup all relevant applications. It must work on Ubuntu (18.04 LTS, Docker is not installed but highly recommended). We will run our automated tests against your solution 10 second after start.sh would exit with 0.
 3. We prefer Golang, but the solution can also be written in one of the following language/platform: PHP, Nodejs, Python, Java and .Net.
 4. Candidate must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing words `lalamove` and `challenge`.
 5. Having unit/integration tests is a strong bonus.
