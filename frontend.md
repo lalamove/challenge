@@ -49,7 +49,7 @@ npm start
 - Be cautious of third-party library usage. (Don't include a 300KB library only for 1 helper function)
 
 ### Recommand Tech Stack
-- We switching most of our projects from jQuery to React. We aim for reusable components and maintainable codebase when expansion, but feel free to use other tech if you prefer.
+- We are switching most of our projects from jQuery to React. We aim for reusable components and maintainable codebase when expansion, but feel free to use other tech if you prefer.
 
 ### Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
