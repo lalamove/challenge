@@ -1,7 +1,7 @@
 # Lalamove "Software Engineer in Test (iOS/Android)" Technical Challenge
 1. Analyze product requirement
 2. Plan what should be automated
-3. Write automated tests (using UI Automator 2.0 tests on Android and XCUITest tests in Swift on iOS)
+3. Write automated tests (using UI Automator 2.0 tests on Android and XCUITest tests in Swift on iOS) for testable apps found at the bottom of the page
 4. Unit tests are out of scope
 5. Run automation tests on emulator and generate test report
 6. Submit the project as a git repository (github.com, bitbucket.com, gitlab.com) 
