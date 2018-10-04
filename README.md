@@ -6,5 +6,6 @@ Choose the challenge most appropriate for you (one is enough):
 - [Frontend](frontend.md)
 - [Mobile](mobile.md)
 - [Software Engineer in Test (iOS/Android)](set_mobile.md)
+- [Software Engineer in Test (API)](set_api.md)
 
 **Questions? Suggestions? We love to hear from you: <techchallenge@lalamove.com>**
