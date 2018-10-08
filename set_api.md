@@ -19,6 +19,25 @@ We have APIs to process orders and require you to make sure it's functioning cor
 4. Driver to Complete the Order
 5. Cancel Order
 
+## Order Flow
+
+An order has these statuses in sequence: `ASSIGNING` => `ONGOING` => `COMPLETED` or `CANCELLED`
+   - `ASSIGNING`: looking for a driver to be assigned
+   - `ONGOING`: a driver has been assigned and working on the order
+   - `COMPLETED`: the driver has completed the order
+   - `CANCELLED`: the order was cancelled
+
+```mermaid
+graph TD;
+    ASSIGNING-->ONGOING;
+    ASSIGNING-->CANCELLED;
+    ONGOING-->COMPLETED;
+    ONGOING-->CANCELLED;
+```
+(in order to render the above mermaid syntax into diagram, you may install this chrome extension: https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil)
+
+## Endpoints
+
 ### Place Order endpoint
 - Endpoint: /v1/orders
 - HTTP verb: POST
@@ -119,20 +138,7 @@ Returns: HTTP 200
 ```
 1. Returns HTTP 200 with JSON body
 2. Returns HTTP 404 if the order doesn’t exist
-3. An order has these statuses in sequence: `ASSIGNING` => `ONGOING` => `COMPLETED` or `CANCELLED`
-   - `ASSIGNING`: looking for a driver to be assigned
-   - `ONGOING`: a driver has been assigned and working on the order
-   - `COMPLETED`: the driver has completed the order
-   - `CANCELLED`: the order was cancelled
-
-```mermaid
-graph TD;
-    ASSIGNING-->ONGOING;
-    ASSIGNING-->CANCELLED;
-    ONGOING-->COMPLETED;
-    ONGOING-->CANCELLED;
-```
-(in order to render the above mermaid syntax into diagram, you may install this chrome extension: https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil)
+3. Return HTTP 422 with custom message if logic flow is violated
 
 
 ### Driver to Complete the Order endpoint
@@ -149,6 +155,7 @@ Returns: HTTP 200
 ```
 1. Returns HTTP 200 with JSON body
 2. Returns HTTP 404 if the order doesn’t exist
+3. Return HTTP 422 with custom message if logic flow is violated
 
 
 ### Cancel Order endpoint
@@ -165,6 +172,7 @@ Returns: HTTP 200
 ```
 1. Returns HTTP 200 with JSON body
 2. Returns HTTP 404 if the order doesn’t exist
+3. Return HTTP 422 with custom message if logic flow is violated
 
 
 ## How to run the above API on your local machine
@@ -174,7 +182,7 @@ Returns: HTTP 200
 ```BASH
 $ docker network create lalamove-sample-api || true
 $ docker rm -f lalamove-sample-api-db
-$ docker run -d --net=lalamove-sample-api --name lalamove-sample-api-db lalamove/lalamove-sample-api-db:1.0 
+$ docker run -d --net=lalamove-sample-api --name lalamove-sample-api-db lalamove/lalamove-sample-api-db:1.0
 $ docker rm -f lalamove-sample-api
 $ docker run -d --net=lalamove-sample-api --name lalamove-sample-api -p 51544:8000 lalamove/lalamove-sample-api:1.0
 $ curl -X GET -H "Content-Type: application/json; charset=utf-8" http://localhost:51544/ping # you are successful if you get {"msg":"pong"}
