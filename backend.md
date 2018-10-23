@@ -33,6 +33,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 - Similar API from Mapbox or HERE Maps
 - **NOTE:** if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
 4. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL and MongoDB). The DB installation&initialisation must be done in `start.sh`.
+5. all responses should be in json format no matter in success or failure situations.
 
 
 ## Api interface example
@@ -65,11 +66,16 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 
     Header: `HTTP <HTTP_CODE>`
     Body:
-      ```json
+
+      ```
       {
           "error": "ERROR_DESCRIPTION"
       }
       ```
+
+  - Tips:
+
+    coordinates in request should be an array of strings, distance in response should be integer in meters.
 
 #### Take order
 
@@ -113,16 +119,28 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
   - Method: `GET`
   - Url path: `/orders?page=:page&limit=:limit`
   - Response:
+    Header: `HTTP 200`
+    Body:
+      ```
+      [
+          {
+              "id": <order_id>,
+              "distance": <total_distance>,
+              "status": <ORDER_STATUS>
+          },
+          ...
+      ]
+      ```
+    or
 
-    ```
-    [
-        {
-            "id": <order_id>,
-            "distance": <total_distance>,
-            "status": <ORDER_STATUS>
-        },
-        ...
-    ]
-    ```
+    Header: HTTP 400
+    Body:
+      ```
+      {
+          "error": "INVALID_PARAMETERS"
+      }
+      ```
+
+
 
 Questions? We love to answer: techchallenge@lalamove.com
