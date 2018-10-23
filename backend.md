@@ -58,7 +58,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
       {
           "id": <order_id>,
           "distance": <total_distance>,
-          "status": "UNASSIGN"
+          "status": "UNASSIGNED"
       }
       ```
     or
@@ -78,7 +78,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
   - Request body:
     ```
     {
-        "status": "taken"
+        "status": "TAKEN"
     }
     ```
   - Response:
