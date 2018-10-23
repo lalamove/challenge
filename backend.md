@@ -40,7 +40,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 #### Place order
 
   - Method: `POST`
-  - URL path: `/order`
+  - URL path: `/orders`
   - Request body:
 
     ```
@@ -63,7 +63,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
       ```
     or
 
-    Header: `HTTP 500`
+    Header: `HTTP <HTTP_CODE>`
     Body:
       ```json
       {
@@ -73,12 +73,12 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 
 #### Take order
 
-  - Method: `PUT`
-  - URL path: `/order/:id`
+  - Method: `PATCH`
+  - URL path: `/orders/:id`
   - Request body:
     ```
     {
-        "status":"taken"
+        "status": "taken"
     }
     ```
   - Response:
@@ -96,6 +96,15 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
       ```
       {
           "error": "ORDER_ALREADY_BEEN_TAKEN"
+      }
+      ```
+    or
+
+    Header: `HTTP <HTTP_CODE>`
+    Body:
+      ```
+      {
+          "error": "ERROR_DESCRIPTION"
       }
       ```
 
