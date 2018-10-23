@@ -33,7 +33,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 - Similar API from Mapbox or HERE Maps
 - **NOTE:** if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
 4. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL and MongoDB). The DB installation&initialisation must be done in `start.sh`.
-5. all responses should be in json format no matter in success or failure situations.
+5. All responses should be in json format no matter in success or failure situations.
 
 
 ## Api interface example
@@ -133,7 +133,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
       ```
     or
 
-    Header: HTTP 400
+    Header: `HTTP 400`
     Body:
       ```
       {
