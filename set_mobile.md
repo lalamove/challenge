@@ -10,21 +10,21 @@ The app is developed to meet the following functional requirements:
   - Clicking an item will take you to its item details page.
   - Support for devices running iOS 9 and Android 5.0 onwards.
 
-# Deliverables:
+## Deliverables:
   - Write tests that cover all the functional requirements.
   - Test report should be generated after a test run on the emulator.
   - Provide instructions for setting up the environment and running the tests.
   - Submit the project as a git repo (github.com, bitbucket.com, gitlab.com). Please avoid words containing lalamove and challenge if it's a public repo.
 
-# Bonus:
+## Bonus:
   - Write performance tests for app stability.
   - Write tests that cover edge cases.
 
-# Notes:
+## Notes:
   - Don't use any third party test framework. Use UI Automator 2.0 for Android or XCUITest (with Swift) for iOS.
   - Unit tests are out of scope.
 
-# App functionality in depth:
+## App functionality in depth:
 - [Image-1A] Landing page of the app shows Delivery List with maximum 20 records when first opened.
 - [Image-1A] Scrolling up will retrieve more items, each time 20 records are appended at the end of the list.
 - [Image-1A] Shows icon, description and location. Parcels are for Leviero and documents are for Andrio.
@@ -36,7 +36,7 @@ The app is developed to meet the following functional requirements:
 - [Image-2A] Map pin shows and centred to that pin for that delivery.
 - [Image-2B] Shows when clicking the 14th record from Delivery List.
 
-#### Ref images
+### Ref images:
 Image-1A  
 ![Image-1A](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01a.jpg)
 
@@ -53,7 +53,7 @@ Image-2B
 ![Image-2B](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-02b.jpg)
 
 
-# Testable apps
+## Testable apps
   * Android
   `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-android-challenge-20180918.apk`
   * iOS
