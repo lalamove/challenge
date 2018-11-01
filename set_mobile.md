@@ -22,6 +22,7 @@ The app is developed to meet the following functional requirements:
 
 ## Notes:
   - Don't use any third party test framework. Use UI Automator 2.0 for Android or XCUITest (with Swift) for iOS.
+  - Choose one platform (iOS or Android) most appropriate for you.
   - Unit tests are out of scope.
 
 ## App functionality in depth:
@@ -53,7 +54,7 @@ Image-2B
 ![Image-2B](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-02b.jpg)
 
 
-## Testable apps
+## Apps to test
   * Android
   `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-android-challenge-20180918.apk`
   * iOS
