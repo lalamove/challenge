@@ -8,7 +8,7 @@ The app is developed to meet the following functional requirements:
   - Landing page with list of items to be delivered (with infinity scroll).
   - Long press on an item will delete it.
   - Clicking an item will take you to its item details page.
-  - Support for devices running iOS 9 and Android 5.0 onwards.
+  - Support for devices running iOS 9/Android 5.0 onwards.
 
 ## Deliverables:
   - Write tests that cover all the functional requirements.
@@ -22,7 +22,7 @@ The app is developed to meet the following functional requirements:
 
 ## Notes:
   - Don't use any third party test framework. Use UI Automator 2.0 for Android or XCUITest (with Swift) for iOS.
-  - Choose one platform (iOS or Android) most appropriate for you.
+  - Choose one platform (iOS/Android) most appropriate for you.
   - Unit tests are out of scope.
 
 ## App functionality in depth:
