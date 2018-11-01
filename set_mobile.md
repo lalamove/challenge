@@ -60,5 +60,5 @@ Image-2B
   * iOS
   `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-ios-challenge-20180918.zip`
 
-**We are happy to answer any questions: <techchallenge@lalamove.com>**
+**We are happy to answer any questions/Submission: <techchallenge@lalamove.com>**
 
