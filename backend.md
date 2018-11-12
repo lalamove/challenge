@@ -97,15 +97,6 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
       ```
     or
 
-    Header: `HTTP 409`
-    Body:
-      ```
-      {
-          "error": "ORDER_ALREADY_BEEN_TAKEN"
-      }
-      ```
-    or
-
     Header: `HTTP <HTTP_CODE>`
     Body:
       ```
@@ -131,16 +122,15 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
           ...
       ]
       ```
+
     or
 
-    Header: `HTTP 400`
-    Body:
-      ```
-      {
-          "error": "INVALID_PARAMETERS"
-      }
-      ```
+    Header: `HTTP <HTTP_CODE>` Body:
 
-
+    ```
+    {
+        "error": "ERROR_DESCRIPTION"
+    }
+    ```
 
 Questions? We love to answer: techchallenge@lalamove.com
