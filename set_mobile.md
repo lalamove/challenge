@@ -2,7 +2,7 @@
 
 ## Introduction
 
-At Lalamove, we are rapidly gorwing and want to ensure our mobile apps are production ready with good test coverage.
+At Lalamove, we are rapidly growing and want to ensure our mobile apps are production ready with good test coverage.
 You are thus being asked to write automated tests for the provided app in this tech challenge.
 The app is developed to meet the following functional requirements:
   - Landing page with list of items to be delivered (with infinity scroll).
