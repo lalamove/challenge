@@ -21,7 +21,7 @@ The app is developed to meet the following functional requirements:
   - Write tests that cover edge cases.
 
 ## Notes
-  - Don't use any third party test framework. Use UI Automator 2.0 for Android or XCUITest (with Swift) for iOS.
+  - You could choose any test framework. (We prefer UI Automator 2.0 for Android or XCUITest (with Swift) for iOS).
   - Choose one platform (iOS/Android) most appropriate for you.
   - Unit tests are out of scope.
 
@@ -30,8 +30,6 @@ The app is developed to meet the following functional requirements:
 - [Image-1A] Scrolling up will retrieve more items, each time 20 records are appended at the end of the list.
 - [Image-1A] Shows icon, description and location. Parcels are for Leviero and documents are for Andrio.
 - [Image-1A] Long press on an item, and it will be deleted.
-- [Image-1B] This error shows either when opening the app or when refreshing the page.
-- [Image-1C] This error shows when trying to retrieve more items from the server.
 - [Image-2A] Click any item from Delivery List and Delivery Details page shows.
 - [Image-2A] Information should be shown correctly based on the item details from [Image-1A] (refer to attached mockup).
 - [Image-2A] Map pin shows and centred to that pin for that delivery.
@@ -40,12 +38,6 @@ The app is developed to meet the following functional requirements:
 ### Ref images
 Image-1A  
 ![Image-1A](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01a.jpg)
-
-Image-1B  
-![Image-1B](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01b.jpg)
-
-Image-1C  
-![Image-1C](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-01c.jpg)
 
 Image-2A  
 ![Image-2A](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-02a.jpg)
