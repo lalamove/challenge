@@ -28,7 +28,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
         {
             "id": 0,
             "description": "Deliver documents to Andrio",
-            "imageUrl": "https://www.what-dog.net/Images/faces2/scroll0015.jpg",
+            "imageUrl": "https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/pet-8.jpeg",
             "location": {
                 "lat": 22.336093,
                 "lng": 114.155288,
@@ -37,7 +37,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
         }, {
             "id": 1,
             "description": "Deliver parcel to Leviero",
-            "imageUrl": "http://www.memoryandjustice.org/wp-content/uploads/2017/10/impossibly-cute-puppy-8.jpg",
+            "imageUrl": "https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/pet-0.jpeg",
             "location": {
                 "lat": 22.319181,
                 "lng": 114.170008,
@@ -59,13 +59,13 @@ As an user I want to be able to see a list of my deliveries, including receivers
 Production ready solution that you are proud of.
 
 ## Technical Requirement
-- Source code must be stored in a git repository (you can send us github or bitbucket link)
+- Source code must be stored in a Git repository (you can send us github or bitbucket link)
 - For public repos:
 	- Avoid words `lalamove` and `challenge`
 	- Do not copy-paste any part of this file (task, API documentation, etc.)
 	- This is needed to prevent other candidates from finding your solution
 - App should cache deliveries (Cached deliveries should be available offline)
-- Could retrieve up to maximum 20 items per API call
+- Should implement pagination, retrieve up to 20 items per page
 - Candidates are free to use any libraries
 
 * ### iOS Engineer
