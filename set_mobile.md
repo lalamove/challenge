@@ -46,11 +46,13 @@ Image-2B
 ![Image-2B](https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/tc-02b.jpg)
 
 
-## Apps to test
-  * Android
-  `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-android-challenge-20180918.apk`
-  * iOS
-  `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-ios-challenge-20180918.zip`
+## Apps to test (Download the appropriate one below)
+  * Android (.apk)
+    `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-android-challenge-20180918.apk`
+  * iOS (.app)
+    `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-ios-challenge-simulator-20190125.zip`
+  * iOS (Xcode Project)
+    `https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/testable-app/app-tech-ios-challenge-project-20190125.zip`
 
 **We are happy to answer any questions/Submission: <techchallenge@lalamove.com>**
 
