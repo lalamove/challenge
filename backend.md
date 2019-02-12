@@ -76,7 +76,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
   - Tips:
 
     - coordinates in request should be an array of strings
-    - order id in response should be an auto-incremental integer
+    - order id in response should be unique, it can be an auto-incremental integer or uuid string
     - distance in response should be integer in meters
 
 
