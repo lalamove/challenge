@@ -1,58 +1,78 @@
 # Lalamove Software Engineer Challenge - Frontend
 
-### Requirements
-- Get pick-up location and drop-off location from user, submit them to [mockApi](https://github.com/lalamove/challenge/tree/master/mockApi)
-- Display **driving route** returned by API on embedded Map from one of data providers:
-  - [Google Map API](https://developers.google.com/maps/)
-  - Similar solutions from Mapbox or HERE Maps
-  - NOTE: if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
-- Should autocomplete address
-- Multi-stops is not required
+- [Functional Requirements](#functional-requirements)
+- [Other Requirements](#other-requirements)
+- [Nice-to-Haves (Optional Features)](#nice-to-haves-optional-features)
+- [Wireframes](#wireframes)
+- [Using the Mock API](#using-the-mock-api)
+- [Frameworks and Libraries](#frameworks-and-libraries)
+- [Expectations](#expectations)
+- [Submission](#submission)
 
-- API usage should be correct
-  1. `POST` `/route`: Submit pick-up point and drop-off location
-  2. `GET` `/route/<TOKEN>`: Get driving route
+## Functional Requirements
 
-### How to start the mockApi
-Requires Node.js ver. 4+
+1. Get one pickup location and one drop-off location from the user and submit them to the Mock API. Refer to the [Using the Mock API](#using-the-mock-api) section.
+	- API usage must be in accordance with the documentation.
+	- Errors must be handled.
+	- Automatic retries when the backend is busy.
+2. Addresses must autocomplete.
+3. Display the driving route returned from the API, **in the correct order**, on an embedded map from one of these providers:
+	- [Google Maps](https://developers.google.com/maps/)
+	- Mapbox
+	- HERE Maps
 
-1. Go to the mockApi folder
+	In the case of Google Maps, please do not include your API key in your submission. Instead, provide instructions on how we can use our own API key with your solution.
 
-2. Install dependencies:
-```
-npm install
-```
+## Other Requirements
 
-3. Run the server:
-```
-npm start
-```
+1. Major functionalities must be covered by tests.
+2. Support for modern browsers. There is no need to support legacy browsers.
+3. Instructions on producing a production build are included.
+4. Git is used.
 
-### Notes
-- Source code must be stored in a git repository (you can send us a link to a github or bitbucket repo)
-  - For public repos:
-	  - Avoid words like `lalamove` and `challenge`.
-	  - Do not copy-paste any part of this file. (task, API documentation, etc.)
-	  - This is needed to prevent other candidates from finding your solution.
-- Your repo should be easy to setup with clear instruction.
-- (Optional) Deploy as a public site to your own host.
-- (Optional) PWA
-- (Optional) Mobile Responsive
+## Nice-to-Haves (Optional Features)
 
-### Expection
-- This challange should take around 4 hours to complete.
-- You can work on it at your own schedule, but a complete solution is expected within 7 days.
-- Your code should be modular, each module should focus on doing one thing and do it well.
-- Major functionalities should be covered by unit tests.
-- Avoid over-engineering.
-- Error handling and retry if backend is busy.
-- Be cautious of third-party library usage. (Don't include a 300KB library only for 1 helper function)
+1. Progressive Web App
+2. Mobile responsiveness
+3. Deploy the application onto a remote server
+4. Additional features that you think will enhance the user experience
 
-### Recommand Tech Stack
-- We are switching most of our projects from jQuery to React. We aim for reusable components and maintainable codebase when expansion, but feel free to use other tech if you prefer.
+## Wireframes
 
-### Wireframe
-*For reference only, you can be creative with design and UI/UX features.*
+We include wireframes as a reference for the UI of your application. You are welcome to be creative with UI/UX and additional features.
+
 ![Wireframe](assets/llm-frontend-engineer-wireframe.png)
 
-**Questions? We love to answer: <techchallenge@lalamove.com>**
+## Using the Mock API
+
+You are free to use the Mock API provided by us to work on your solution, at [https://mock-api.dev.lalamove.com](https://mock-api.dev.lalamove.com). Alternatively, you can also boot up the [Mock API](https://github.com/lalamove/challenge/tree/master/mockApi), also in this repository, by yourself. Please do not include the Mock API in your submission if you choose the latter.
+
+Please find the documentation for the Mock API [here](https://github.com/lalamove/challenge/blob/master/mockApi/DOC.md).
+
+## Frameworks and Libraries
+
+We use React at Lalamove and we have been gradually transitioning jQuery projects to React, as well. However, you are free to use whatever framework or library that you are familiar with or prefer.
+
+Feel free to use any CSS framework of choice, if you want to. We would prefer you to write some CSS to customize the framework if you do.
+
+## Expectations
+
+- This challenge should take around four hours to complete.
+- You can work on your own schedule, but a complete solution is expected within seven days.
+- Your code should be modular. Each module should focus on doing one thing well.
+- We aim for reusable components and a maintainable codebase as our projects are worked on by developers from different teams.
+- Avoid over-engineering. Over-engineering will be penalized.
+- Be frugal in the use of third-party libraries. (Don’t include a 300 KB library just for one helper function, for example.)
+
+## Submission
+
+Please send us a link to your Git repository. If your repository is public, please take note of the following points to prevent other candidates from finding your solution:
+
+- Avoid words like “Lalamove” and “challenge” in your repository.
+- Do not copy any part of this file or any part of the Mock API.
+
+Alternatively, you may also send us a ZIP archive file containing your solution. For fairness’ sake, you must also use Git and include the `.git` directory in the archive if you submit a ZIP archive file.
+
+Please provide instructions on starting your application and configuring the API keys, if any, in the form of a `README.md` file.
+
+**Questions? Ping us at: [techchallenge@lalamove.com](mailto:techchallenge@lalamove.com)**
