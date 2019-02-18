@@ -8,7 +8,8 @@ In Lalamove, our backend system is composed of a bunch of microservices. These m
 
 1. We value a **clean**, **simple** working solution.
 2. You should provide some simple steps or scripts to run your tests.
-3. Candidate must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing words `lalamove` and `challenge`.
+3. You could choose any test framework (We prefer Node.js eg. mocha, jest, etc..)
+4. Candidate must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing words `lalamove` and `challenge`.
 
 ## Problem Statement
 
