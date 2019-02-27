@@ -9,9 +9,9 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 1. We value a **clean**, **simple** working solution.
 2. The application must be run in Docker, candidate must provide `docker-compose.yml` and `start.sh` bash script at the root of the project, which should setup all relevant services/applications.
 3. We prefer Golang, but the solution can also be written in one of the following language/platform: PHP, Node.js.
-4. Candidate must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing words `lalamove` and `challenge`.
+4. Candidates must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing the words `lalamove` and `challenge`.
 5. Having unit/integration tests is a strong bonus.
-6. As we run automated tests on your project, you must comply to the requirement. You can assume Docker is already installed in the test machine.
+6. As we run automated tests on your project, you must comply to the API requirement as stipulated below. You can assume Docker is already installed in the test machine.
 7. The solution must be production ready.
 
 ## Problem Statement
@@ -23,20 +23,23 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
         - The API responds an object containing the distance and the order ID (see sample)
 
     - One endpoint to take an order (see sample)
-        - An order must not be takable multiple time.
-        - An error response should be sent if a client tries to take an order already taken.
+        - An order can only be taken once.
+        - An error response should be returned if a client tries to take an order that is already taken.
 
     - One endpoint to list orders (see sample)
 
-3. You must use one of the following APIs to get the distance for the order:
+3. The request input should be validated before processing. The server should return proper error response in case validation fails.
+4. You must use one of the following APIs to get the distance for the order:
 - Google Maps API (https://cloud.google.com/maps-platform/routes/)
 - Similar API from Mapbox or HERE Maps
 - **NOTE:** if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
-4. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL). The DB installation & initialisation must be done in `start.sh`.
-5. All responses should be in json format no matter in success or failure situations.
+5. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL). The DB installation & initialisation must be done in `start.sh`.
+6. All responses must be in json format no matter in success or failure situations.
 
 
-## Api interface example
+## Api Interface
+
+You are expected to follow the API specification as follows. Your implementation should not have any deviations on the method, URI path, request and response body. Such alterations may cause our automated tests to fail.
 
 #### Place order
 
@@ -75,9 +78,9 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 
   - Tips:
 
-    - coordinates in request should be an array of strings
-    - order id in response should be unique, it can be an auto-incremental integer or uuid string
-    - distance in response should be integer in meters
+    - Coordinates in request must be an array of exactly **two** strings. The type shall only be strings, not integers or floats.
+    - Order id in response should be unique. It can be an auto-incremental integer or uuid string
+    - Distance in response should be integer in meters
 
 
 #### Take order
@@ -110,7 +113,8 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 
   - Tips:
 
-    Be mindful of race condition, when there are concurrency requests, we expect only one can take the order
+    - Since an order can only be taken once, you must be mindful of race condition.
+    - When there are concurrent requests to take a same order, we expect only one can take the order while the other will fail.
 
 
 #### Order list
