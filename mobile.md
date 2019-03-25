@@ -79,5 +79,8 @@ Production ready solution that you are proud of.
 *For reference only, you can be creative with design and UI/UX features.*
 ![Wireframe](assets/mobile-engineer-wireframe.png)
 
+## Bonus Points
+- Automation test.
+- Additional features that you think will enhance the user experience.
 
 **Questions? We love to answer: <techchallenge@lalamove.com>**
