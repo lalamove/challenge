@@ -39,7 +39,7 @@
 
 ## Wireframes
 
-We include wireframes as a reference for the UI of your application. You are welcome to be creative with UI/UX and additional features.
+We include wireframes only as a reference for the UI of your application. Please be creative with UI/UX and additional features.
 
 ![Wireframe](assets/llm-frontend-engineer-wireframe.png)
 
