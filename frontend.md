@@ -32,10 +32,11 @@
 
 ## Nice-to-Haves (Optional Features)
 
-1. Progressive Web App
-2. Mobile responsiveness
-3. Deploy the application onto a remote server
-4. Additional features that you think will enhance the user experience
+1. The autocomplete fields are pre-filled with previous inputs when you close and re-open the page
+2. Progressive Web App
+3. Mobile responsiveness
+4. Deploy the application onto a remote server
+5. Additional features that you think will enhance the user experience
 
 ## Wireframes
 
