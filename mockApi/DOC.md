@@ -21,17 +21,17 @@ POST /route
 
 ##### Body Parameters
 
-| Parameter Name | Type                       | Presence | Description                        |
-| -------------- | -------------------------- | -------- | ---------------------------------- |
-| `origin`       | 2-element array of strings | Required | Coordinates of the pickup point.   |
-| `destination`  | 2-element array of strings | Required | Coordinates of the drop-off point. |
+| Parameter Name | Type   | Presence | Description                    |
+|----------------|--------|----------|--------------------------------|
+| `origin`       | string | Required | Address of the pickup point.   |
+| `destination`  | string | Required | Address of the drop-off point. |
 
 #### Sample Request
 
 ```
 curl --request POST \
      --header 'Content-Type: application/json' \
-     --data '{"origin":["22.3352403","114.1739748"],"destination":["22.3145244","113.93429"]}' \
+     --data '{"origin":"Innocentre, Hong Kong","destination":"Hong Kong International Airport Terminal 1"}' \
      --url https://mock-api.dev.lalamove.com/route
 ```
 
