@@ -88,8 +88,8 @@ Returns: HTTP 201
    - The order's “id”
    - The driving distances between each 2 stops, in meters. Accuracy below meters is not needed. For example, if there are 3 stops, there will be 2 driving distances.
    - Total fare of the entire trip. It is calculated based on the total trip distance. Price will be calculated based using:
-     1. HKD 20 for first 2 kilometers (from 9pm ~ 5am, it will be HKD 30)
-     2. After 2 kilometers, each 200-meter costs HKD 5 (from 9pm ~ 5am, it will be HKD 8)
+     1. HKD 20 for first 2 kilometers (from 10pm ~ 5am, it will be HKD 30)
+     2. After 2 kilometers, each 200-meter costs HKD 5 (from 10pm ~ 5am, it will be HKD 8)
 
 ### Fetch Order Details endpoint
 - Endpoint: /v1/orders/{orderID}
