@@ -117,8 +117,8 @@ Returns: HTTP 200
         "currency": "HKD"
     },
     "status": "ASSIGNING",
-    "createdAt": "2018-09-01T14:47:23.000Z",
-    "orderAt": "2018-09-03T13:00:00.000Z"
+    "createdTime": "2018-09-01T14:47:23.000Z",
+    "orderDateTime": "2018-09-03T13:00:00.000Z"
 }
 ```
 1. Returns HTTP 200 with JSON body
