@@ -134,7 +134,7 @@ Returns: HTTP 200
 {
     "id": 1234,
     "status": "ONGOING",
-    "ongoingAt": "2018-09-01T14:53:26.000Z"
+    "ongoingTime": "2018-09-01T14:53:26.000Z"
 }
 ```
 1. Returns HTTP 200 with JSON body
