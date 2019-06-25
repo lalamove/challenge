@@ -19,9 +19,9 @@ You will build a configurable http ingress proxy with built in observability tha
 
 Feature requirements:
   - Support prometheus metrics (design appropriate metrics to be exposed).
-  - Support opentracing. Should either propagate the tracing span from the caller or inject a new trace.
   - Support retry for failed requests (5xx status code).
   - Support timeout for requests.
+  - Use [konfig](https://github.com/lalamove/konfig) to parse yaml config file.
 
 Bonus features:
   - Circuit breaker implementation for request failures.
@@ -34,9 +34,6 @@ port: 80
 metrics:
   path: "/metrics"
   port: 9100
-
-tracing:
-    samplingServer: "jaeger:6831"
 
 paths: 
 - path: "/foo*"
