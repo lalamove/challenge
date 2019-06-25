@@ -9,7 +9,7 @@ In Lalamove we are scaling rapidly and we need SREs to help us prevent downtime 
 1. We value a **clean**, **simple** working solution.
 2. The application must be run in Docker, candidate must provide `docker-compose.yml` and `start.sh` bash script at the root of the project, which should setup all relevenat dependencies.
 3. The solution must be written in Golang.
-4. Candidates must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing the words `lalamove` and `challenge`.
+4. Candidate must submit the project as a private git repository (github.com / bitbucket.com / gitlab.com). Repository must grant read access with the public SSH [key](id_rsa.pub).
 5. Having unit/integration tests is a strong bonus.
 6. The solution must be production ready with appropriate documentation.
 
