@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In Lalamove we are scaling rapidly and we need SREs to help us prevent downtime and provide visibility for our engineers into what things may go wrong.
+At Lalamove we are scaling rapidly and we need SREs to help us prevent downtime and provide visibility for our engineers into what things may go wrong.
 
 ## Requirement
 
@@ -20,16 +20,20 @@ You will build a configurable http ingress proxy with built in observability tha
 Feature requirements:
   - Support prometheus metrics (design appropriate metrics to be exposed).
   - Support opentracing. Should either propagate the tracing span from the caller or inject a new trace.
+  - Support retry for failed requests (5xx status code).
+  - Support timeout for requests.
 
 Bonus features:
   - Circuit breaker implementation for request failures.
-  - Configurable rate limiting.
+  - Rate limiting.
   
 Example yaml config file that will be used as an input:
 ```yaml
 port: 80
-metricsEndpoint: "/metrics"
-metricsPort: 9100
+
+metrics
+  path: "/metrics"
+  port: 9100
 
 tracing:
     samplingServer: "jaeger:6831"
@@ -40,6 +44,7 @@ paths:
   forwardPort: 8080
   # max number of times the proxy can retry a failed request (5xx status code)
   maxRetry: 3
+  timeout: 1s
   circuitBreaking:
     # number of consecutive errors after which the circuit breaker should reject incoming requests 
     maxError: 3
