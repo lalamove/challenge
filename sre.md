@@ -31,7 +31,7 @@ Example yaml config file that will be used as an input:
 ```yaml
 port: 80
 
-metrics
+metrics:
   path: "/metrics"
   port: 9100
 
