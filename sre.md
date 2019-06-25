@@ -26,10 +26,13 @@ Bonus features:
   - Configurable rate limiting.
   
 Example yaml config file that will be used as an input:
-```
+```yaml
 port: 80
 metricsEndpoint: "/metrics"
 metricsPort: 9100
+
+tracing:
+    samplingServer: "jaeger:6831"
 
 paths: 
 - path: "/foo*"
