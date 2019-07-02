@@ -29,10 +29,9 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
     - One endpoint to list orders (see sample)
 
 3. The request input should be validated before processing. The server should return proper error response in case validation fails.
-4. You must use one of the following APIs to get the distance for the order:
+4. You must use following API to get the distance for the order:
 - Google Maps API (https://cloud.google.com/maps-platform/routes/)
-- Similar API from Mapbox or HERE Maps
-- **NOTE:** if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
+- **NOTE:** You don't have to provide actual Google Maps API key to us, just describe in the README how to use a custom key with your solution.
 5. A Database must be used (SQL or NoSQL, at Lalamove we use mostly MySQL). The DB installation & initialisation must be done in `start.sh`.
 6. All responses must be in json format no matter in success or failure situations.
 
@@ -76,9 +75,10 @@ You are expected to follow the API specification as follows. Your implementation
       }
       ```
 
-  - Tips:
+  - Requirements:
 
     - Coordinates in request must be an array of exactly **two** strings. The type shall only be strings, not integers or floats.
+    - The latitude and longtitude value of coordinates must be correctly validated.
     - Order id in response should be unique. It can be an auto-incremental integer or uuid string
     - Distance in response should be integer in meters
 
@@ -111,7 +111,7 @@ You are expected to follow the API specification as follows. Your implementation
       }
       ```
 
-  - Tips:
+  - Requirements:
 
     - Since an order can only be taken once, you must be mindful of race condition.
     - When there are concurrent requests to take a same order, we expect only one can take the order while the other will fail.
@@ -145,9 +145,10 @@ You are expected to follow the API specification as follows. Your implementation
     }
     ```
 
-  - Tips:
+  - Requirements:
 
-    - If page or limit is not valid integer then you should return error response
+    - Page number must starts with 1
+    - If page or limit is not a valid integer then you should return error response
     - If there is no result, then you should return an empty array json in response body
 
 Questions? We love to answer: techchallenge@lalamove.com
