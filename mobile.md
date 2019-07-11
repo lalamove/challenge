@@ -64,6 +64,9 @@ Production ready solution that you are proud of.
 	- Avoid words `lalamove` and `challenge`
 	- Do not copy-paste any part of this file (task, API documentation, etc.)
 	- This is needed to prevent other candidates from finding your solution
+- For private repos access: 
+	- Github: Please add [techchallenge-lalamove](https://github.com/techchallenge-lalamove) as project collaborator
+	- Bitbucket: Please give read access to "techchallenge@lalamove.com"
 - App should cache deliveries (Cached deliveries should be available offline)
 - Should implement pagination, retrieve up to 20 items per page
 - Candidates are free to use any libraries
