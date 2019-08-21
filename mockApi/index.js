@@ -61,6 +61,46 @@ router.get('/route/:token', function* () {
 		total_time: 1800
 	}
 })
+
+router
+	.post('/mock/route/500', function* () {
+		this.status = 500
+		return
+	})
+	.post('/mock/route/success', function* () {
+		this.body = {
+			"token": "9d3503e0-7236-4e47-a62f-8b01b5646c16"
+		}
+		return
+	})
+	.get('/mock/route/500', function* () {
+		this.status = 500
+		return
+	})
+	.get('/mock/route/inprogress', function* () {
+		this.body = { status: 'in progress' }
+		return
+	})
+	.get('/mock/route/failure', function* () {
+		this.body = {
+			status: 'failure',
+			error: 'Location not accessible by car'
+		}
+		return
+	})
+	.get('/mock/route/success', function* () {
+		this.body = {
+			status: 'success',
+			path: [
+				["22.372081", "114.107877"],
+				["22.326442", "114.167811"],
+				["22.284419", "114.159510"]
+			],
+			total_distance: 20000,
+			total_time: 1800
+		}
+		return
+	})
  
 app
 	.use(logger())
