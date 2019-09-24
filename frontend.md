@@ -6,17 +6,20 @@ It should then display the way points returned from the backend.
 ## Requirements
 ### Functional
 1. Get the addresses of pickup and drop off point from user input and submit to our [MockAPI](#mock-api).
-	- Retry logic when the backend is busy (returns `in progress`).
+	- Retry logic only when the backend is busy (`in progress`).
+	- Should stop requesting when error.
 	- Errors must be handled.
 	- Correct API usage in accordance with the documentation.
 2. Display waypoints returned from Mock API on an embedded map,
 	- Please use a map provider such as Google Maps, Mapbox, or HERE Maps.
 	- Way points must displayed on corresponding LatLng
-	  Please don't include your API key in your submission. Instead, provide instructions on how to apply different API KEY.
+	- Way points must show its sequence (e.g. 1,2,3/ A,B,C) (image is ok) and in correct order 
+
+Please don't include your API key in your submission. Instead, provide instructions on how to apply different API KEY.
 ​
 ### Bonus:
   - Autocomplete for user input
-  - Display a driving routes from the Mock API response using your maps provider (The waypoints must be in the correct order)
+  - Display a driving routes from the Mock API response using your maps provider (actual routes where car can pass though)
 ​
 ### Other
 1. Instructions on starting your application
