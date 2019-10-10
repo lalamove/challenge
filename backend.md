@@ -10,7 +10,7 @@ In Lalamove, we are receiving order of delivery day and night. As a software eng
 2. The application must be run in Docker, candidate must provide `docker-compose.yml` and `start.sh` bash script at the root of the project, which should setup all relevant services/applications.
 3. We prefer Golang, but the solution can also be written in one of the following language/platform: PHP, Node.js.
 4. Candidates must submit the project as a git repository (github.com, bitbucket.com, gitlab.com). Repository must avoid containing the words `lalamove` and `challenge`.
-5. Having unit/integration tests is a strong bonus.
+5. Candidates must write unit tests for the endpoints and it would be a strong bonus if also having integration tests.
 6. As we run automated tests on your project, you must comply to the API requirement as stipulated below. You can assume Docker is already installed in the test machine.
 7. The solution must be production ready.
 
