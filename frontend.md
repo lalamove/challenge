@@ -6,7 +6,7 @@ It should then display the way points returned from the backend.
 ## Requirements
 ### Functional
 1. Get the addresses of pickup and drop off point from user input and submit to our [MockAPI](#mock-api).
-	- Retry logic only when the backend is busy (`in progress`).
+	- Retry logic only when the backend is busy (`in progress` response).
 	- Should stop requesting when error.
 	- Errors must be handled.
 	- Correct API usage in accordance with the documentation.
@@ -20,6 +20,7 @@ Please don't include your API key in your submission. Instead, provide instructi
 ### Bonus:
   - Autocomplete for user input
   - Display a driving routes from the Mock API response using your maps provider (actual routes where car can pass though)
+  - Mobile responsive
 ​
 ### Other
 1. Instructions on starting your application
@@ -56,5 +57,8 @@ If you are so inclined, you can deploy the application onto a remote server (e.g
 > You can work on your own schedule, but a complete solution is expected within seven days.
 ### The UI looks very ugly. Can I design my own?
 > Feel free implement any additional features that you think will enhance the user experience.
+### Do I need to deploy somewhere?
+> See `Submission`.
 ​
+
 **Questions? Ping us at: [techchallenge@lalamove.com](mailto:techchallenge@lalamove.com)**
