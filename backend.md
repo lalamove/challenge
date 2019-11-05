@@ -48,8 +48,8 @@ You are expected to follow the API specification as follows. Your implementation
 
     ```
     {
-        "origin": ["START_LATITUDE", "START_LONGTITUDE"],
-        "destination": ["END_LATITUDE", "END_LONGTITUDE"]
+        "origin": ["START_LATITUDE", "START_LONGITUDE"],
+        "destination": ["END_LATITUDE", "END_LONGITUDE"]
     }
     ```
 
@@ -78,7 +78,7 @@ You are expected to follow the API specification as follows. Your implementation
   - Requirements:
 
     - Coordinates in request must be an array of exactly **two** strings. The type shall only be strings, not integers or floats.
-    - The latitude and longtitude value of coordinates must be correctly validated.
+    - The latitude and longitude value of coordinates must be correctly validated.
     - Order id in response should be unique. It can be an auto-incremental integer or uuid string
     - Distance in response should be integer in meters
 
