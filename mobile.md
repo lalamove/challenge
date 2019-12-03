@@ -13,7 +13,7 @@ As an user I want to be able to see a list of my deliveries, including receivers
   * Method
     `GET`
   * Endpoint
-    `/deliveries`
+    `/v2/deliveries`
   * Query String Parameters
     * `offset`
       * Description: Starting index.
@@ -26,24 +26,39 @@ As an user I want to be able to see a list of my deliveries, including receivers
     ```json
     [
         {
-            "id": 0,
-            "description": "Deliver documents to Andrio",
-            "imageUrl": "https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/pet-8.jpeg",
-            "location": {
-                "lat": 22.336093,
-                "lng": 114.155288,
-                "address": "Cheung Sha Wan"
-            }
-        }, {
-            "id": 1,
-            "description": "Deliver parcel to Leviero",
-            "imageUrl": "https://s3-ap-southeast-1.amazonaws.com/lalamove-mock-api/images/pet-0.jpeg",
-            "location": {
-                "lat": 22.319181,
-                "lng": 114.170008,
-                "address": "Mong Kok"
-            }
-        },
+	    "id": "5dd5f3a7156bae72fa5a5d6c",
+	    "remarks": "Minim veniam minim nisi ullamco consequat anim reprehenderit laboris aliquip voluptate sit.",
+	    "pickupTime": "2014-10-06T10:45:38-08:00",
+	    "goodsPicture": "https://loremflickr.com/320/240/cat?lock=9953",
+	    "deliveryFee": "$92.14",
+	    "surcharge": "$136.46",
+	    "route": {
+	    	"start": "Noble Street",
+		"end": "Montauk Court"
+	    },
+	    "sender": {
+		"phone": "+1 (899) 523-3905",
+		"name": "Harding Welch",
+		"email": "hardingwelch@comdom.com"
+	     }
+	},
+	{
+	    "id": "5dd5f3a787c49789dca0b43f",
+	    "remarks": "Minim deserunt nisi qui veniam est amet pariatur voluptate ea est exercitation cupidatat sit ea.",
+	    "pickupTime": "2018-11-22T07:06:05-08:00",
+	    "goodsPicture": "https://loremflickr.com/320/240/cat?lock=28542",
+	    "deliveryFee": "$104.23",
+	    "surcharge": "$288.13",
+	    "route": {
+		"start": "Henry Street",
+		"end": "Clinton Street"
+	    },
+	    "sender": {
+		"phone": "+1 (942) 512-3379",
+		"name": "Kendra Guthrie",
+		"email": "kendraguthrie@comdom.com"
+	    }
+	},
         ...
     ]
     ```
@@ -52,8 +67,10 @@ As an user I want to be able to see a list of my deliveries, including receivers
 - Retrieve list of deliveries from the API
 - Display list of deliveries.
 - Show details when user select an item in the list.
-- Add marker on the map based on the provided lat/lng. 
-  - NOTE: if you use Google Maps, you don't have to provide actual API key to us, just describe in the README how to use a custom key with your solution.
+- Price displayed in both deliver list and detail = `deliveryFee + surcharge`
+- In details screen, show a button to let user favourite the delivery
+	- If user marked a delivery favourite and go back to delivery list, show a favourite indicator in the list item
+	- Favourite status for each item should be persistent 
 
 ### What we expect from you?
 Production ready solution that you are proud of.
@@ -67,8 +84,9 @@ Production ready solution that you are proud of.
 - For private repos access: 
 	- Github: Please add [techchallenge-lalamove](https://github.com/techchallenge-lalamove) as project collaborator
 	- Bitbucket: Please give read access to "techchallenge@lalamove.com"
-- App should cache deliveries (Cached deliveries should be available offline)
+- App should cache deliveries (either use local database or storage)
 - Should implement pagination, retrieve up to 20 items per page
+- Code should be testable
 - Candidates are free to use any libraries
 
 * ### iOS Engineer
@@ -80,10 +98,10 @@ Production ready solution that you are proud of.
 
 ## Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
-![Wireframe](assets/mobile-engineer-wireframe.png)
+![Wireframe](assets/mobile-engineer-wireframe-v2.png)
 
 ## Bonus Points
-- Automation test.
+- Unit/Automation test.
 - Additional features that you think will enhance the user experience.
 
 **Questions? We love to answer: <techchallenge@lalamove.com>**
