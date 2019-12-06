@@ -68,8 +68,9 @@ As an user I want to be able to see a list of my deliveries, including receivers
 - Display list of deliveries.
 - Show details when user select an item in the list.
 - Price displayed in both deliver list and detail = `deliveryFee + surcharge`
-- In details screen, show a button to let user favourite the delivery
+- In details screen, show a toggle button to let user favourite/un-favourite the delivery
 	- If user marked a delivery favourite and go back to delivery list, show a favourite indicator in the list item
+	- If user un-favourite and go back to delivery list, hide the favourite indicator
 	- Favourite status for each item should be persistent 
 
 ### What we expect from you?
