@@ -95,14 +95,15 @@ Production ready solution that you are proud of.
 	- Must write in the latest Swift version
 
 * ### Android Engineer
-	- Project must compile `./gradlew build`
+	- Screen rotation is required
+	- Project must be able to compile with `./gradlew build`
 
 ## Wireframe
 *For reference only, you can be creative with design and UI/UX features.*
 ![Wireframe](assets/mobile-engineer-wireframe-v2.png)
 
 ## Bonus Points
-- Unit/Automation test.
+- Automation test.
 - Additional features that you think will enhance the user experience.
 
 **Questions? We love to answer: <techchallenge@lalamove.com>**
