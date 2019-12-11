@@ -96,6 +96,7 @@ Production ready solution that you are proud of.
 
 * ### Android Engineer
 	- Screen rotation is required
+	- Display the `Price` in 2 decimal places
 	- Project must be able to compile with `./gradlew build`
 
 ## Wireframe
