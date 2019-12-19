@@ -1,7 +1,7 @@
 # Lalamove Mobile Developer Technical Challenge
 
 ### Business requirement
-As a user I want to be able to see a list of my deliveries, including the receiver's photo and the item description. I also want to be able to see the delivery location on the map and a full description when I click on the delivery item.
+As a user I want to be able to see a list of my deliveries, including the receiver's photo and the item description. I also want to be able to see the delivery details when I click on the delivery item.
 
 ### API Specification
 
