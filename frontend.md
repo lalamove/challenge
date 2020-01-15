@@ -50,7 +50,7 @@ If you are so inclined, you can deploy the application onto a remote server (e.g
 ### How much time should I spend on completing this challenge?
 > You can work on your own schedule, but a complete solution is expected within 7 days.
 ### The UI looks ugly. Can I design my own?
-> You can be creative with the UI design, also, feel free implement any additional features that you think will enhance the UX.
+> You can be creative with the UI design, also, feel free to implement any additional features that you think will enhance the UX.
 ### Do I need to deploy somewhere?
 > See **Submission** section above.
 
