@@ -8,5 +8,6 @@ Choose the challenge most appropriate for you (one is enough):
 - [Software Engineer in Test (iOS/Android)](set_mobile.md)
 - [Software Engineer in Test (API)](set_api.md)
 - [Site Reliability Engineer](sre.md)
+- [Fresh Graduate](freshgrad.md)
 
 **Questions? Suggestions? We love to hear from you: <techchallenge@lalamove.com>**
