@@ -1,6 +1,6 @@
 # What?
 
-You will write a command line program that can create/list/take an order, 
+You will write a command line program for macOS/Linux that can create/list/take an order, 
 to simulate a very simple Lalamove.
 
 Please also write a README explaining your technology choices, and some instruction 
