@@ -12,4 +12,4 @@ Choose the challenge most appropriate for you (one is enough):
 
 **Questions? Suggestions? We love to hear from you: <techchallenge@lalamove.com>**
 
-Please state clearly the position yor are applying in your email.
+Please state clearly your name and the position yor are applying in your email.
