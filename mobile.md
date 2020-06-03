@@ -109,4 +109,4 @@ Production ready solution that you are proud of.
 
 **Questions? We love to answer: <techchallenge@lalamove.com>**
 
-Please state clearly your platform (iOS/Android) and the position yor are applying in your email.
+Please state clearly your name, platform (iOS/Android) and the position yor are applying for in your email.
