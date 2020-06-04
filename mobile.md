@@ -107,6 +107,9 @@ Production ready solution that you are proud of.
 - Automation test.
 - Additional features that you think will enhance the user experience.
 
-**Questions? We love to answer: <techchallenge@lalamove.com>**
+## Questions
+
+- iOS: <techchallenge+ios@lalamove.com>
+- Android: <techchallenge+android@lalamove.com>
 
 Please state clearly your name, platform (iOS/Android) and the position yor are applying for in your email.
