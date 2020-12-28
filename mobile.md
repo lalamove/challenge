@@ -127,7 +127,7 @@ Production ready solution that you are proud of.
   * Github: Please add [techchallenge-lalamove](https://github.com/techchallenge-lalamove) as project collaborator
   * Bitbucket: Please give read access to `techchallenge@lalamove.com` ([lalachallenge](https://bitbucket.org/lalachallenge/))
 
-Once you have shared the repository, please drop us an email (see the email addresses below) and specify your name, job title you are applying and also the repository link. Otherwise we will not start reviewing your submission.
+Once you have shared the repository, please drop us an email (see the email addresses below) and specify your name, position you are applying for and also the repository link. Otherwise we will not start reviewing your submission.
 
 **Questions? We love to answer:**
 
