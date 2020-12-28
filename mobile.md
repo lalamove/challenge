@@ -22,7 +22,7 @@ As a user I want to be able to see a list of my deliveries, including the receiv
 
 #### Response example: `HTTP code 200`
 
-```json
+```javascript
 [
   {
     "id": "5dd5f3a7156bae72fa5a5d6c",
