@@ -11,3 +11,5 @@ Choose the challenge most appropriate for you (one is enough):
 - [Fresh Graduate](freshgrad.md)
 
 **Questions? Suggestions? We love to hear from you: <techchallenge@lalamove.com>**
+
+Please state clearly your name and the position yor are applying for in your email.

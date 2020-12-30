@@ -133,3 +133,5 @@ Once you have shared the repository, please drop us an email (see the email addr
 
 * <techchallenge+ios@lalamove.com> (iOS Engineer)
 * <techchallenge+android@lalamove.com> (Android Engineer)
+
+Please state clearly your name, platform (iOS/Android) and the position yor are applying for in your email.
