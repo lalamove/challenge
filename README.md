@@ -9,6 +9,7 @@ Choose the challenge most appropriate for you (one is enough):
 - [Software Engineer in Test (API)](set_api.md)
 - [Site Reliability Engineer](sre.md)
 - [Fresh Graduate](freshgrad.md)
+- [Graduate Data Engineer (Data Platform)](data_platform/README.md)
 
 **Questions? Suggestions? We love to hear from you: <techchallenge@lalamove.com>**
 
