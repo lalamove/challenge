@@ -9,9 +9,9 @@ As a user I want to be able to see a list of my deliveries, including the receiv
 ### Get list of deliveries
 
 * **Protocol** `HTTPS`
-* **Hostname** `mock-api-mobile.dev.lalamove.com`
+* **Hostname** `6285f87796bccbf32d6c0e6a.mockapi.io`
 * **Method** `GET`
-* **Endpoint** `/v2/deliveries`
+* **Endpoint** `/deliveries`
 * **Query String Parameters**
   * `offset`
     * Description: Starting index.
