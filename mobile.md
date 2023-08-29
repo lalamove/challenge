@@ -16,9 +16,6 @@ As a user I want to be able to see a list of my deliveries, including the receiv
   * `offset`
     * Description: Starting index.
     * Data type: Integer.
-  * `limit`
-    * Description: Number of items requested
-    * Data type: Integer.
 
 #### Response example: `HTTP code 200`
 
@@ -66,6 +63,10 @@ As a user I want to be able to see a list of my deliveries, including the receiv
 
 * Retrieve list of deliveries from the API
 * Display list of deliveries
+* Pagination on the delivery list page
+  * When the user scrolls up, you should try to load more from the same API with the correct `offset` value.
+  * The API will always return the same result no matter what `offset` param you pass, you can assume they are new items and append them to the list.
+  * You can assume there are infinite items.
 * Show details when user select an item in the list
 * Price displayed in both deliver list and detail = `deliveryFee` + `surcharge`
 * In details screen, show a toggle button to let user favourite/un-favourite the delivery
