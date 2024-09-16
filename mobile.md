@@ -9,12 +9,15 @@ As a user I want to be able to see a list of my deliveries, including the receiv
 ### Get list of deliveries
 
 * **Protocol** `HTTPS`
-* **Hostname** `6285f87796bccbf32d6c0e6a.mockapi.io`
+* **Hostname** `66e3a4c1d2405277ed11662b.mockapi.io`
 * **Method** `GET`
 * **Endpoint** `/deliveries`
 * **Query String Parameters**
-  * `offset`
-    * Description: Starting index.
+  * `page`
+    * Description: Page number.
+    * Data type: Integer.
+  * `limit`
+    * Description: Number of items per page.
     * Data type: Integer.
 
 #### Response example: `HTTP code 200`
@@ -64,8 +67,8 @@ As a user I want to be able to see a list of my deliveries, including the receiv
 * Retrieve list of deliveries from the API
 * Display list of deliveries
 * Pagination on the delivery list page
-  * When the user scrolls up, you should try to load more from the same API with the correct `offset` value.
-  * The API will always return the same result no matter what `offset` param you pass, you can assume they are new items and append them to the list.
+  * When the user scrolls up, you should try to load more from the same API with the correct `page` value.
+  * The API will always return the same result no matter what `page` param you pass, you can assume they are new items and append them to the list.
   * You can assume there are infinite items.
 * Show details when user select an item in the list
 * Price displayed in both deliver list and detail = `deliveryFee` + `surcharge`
@@ -100,9 +103,9 @@ Production ready solution that you are proud of.
 * Project must be able to compile with `./gradlew build`
 * You may submit your own project as a replacement. However, it is discretionary-based and we might ask you to make additional changes to your project
 
-#### Areas we will assess (for Android Engineer only)
+#### Areas we will assess
 
-1. Architecture, not to include everything inside `Activity` or `Fragment`
+1. Architecture, not to include everything inside `Activity` or `Fragment` in Android, or inside `UIViewController` or `SwiftUI` View in iOS.
 2. Use of dependency injection
 3. Good code style & formatting
 4. Automated test cases (nice to have, no need to make it 100% coverage)
